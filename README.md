@@ -70,7 +70,7 @@ npm start
 
 and make sure you see this.
 
-![Image Caption](images/1.PNG)
+![Image Caption](images/1.png)
 
 If you see something similar to the above image, it's time to make a form. Let's move on!
 
@@ -244,20 +244,20 @@ We are going to use **Email.js** to handle sending the data to your working emai
 1. Go to [**Email.JS**](www.emailjs.com) and create a free account.
 
 2. Click "Add New Service" button in **Email Services** tab.
-   ![Image Caption](images/5.PNG)
+   ![Image Caption](images/5.png)
 
 3. Choose one of the services you want, and fill out the Name and Service ID as following. Then, click connect. You should see the following.  
-   ![Image Caption](images/6.PNG)
+   ![Image Caption](images/6.png)
 
 4. Create New Template in **Email Templates** tab.
-   ![Image Caption](images/7.PNG)
+   ![Image Caption](images/7.png)
 
 5. Modify the Subject and Content as following.
-   ![Image Caption](images/8.PNG)
+   ![Image Caption](images/8.png)
 
 6. Click on `<>` icon, then add `white-space: pre-wrap` attribute to the `<p>` tag for the message.  
-   ![Image Caption](images/9.PNG)
-   ![Image Caption](images/10.PNG)
+   ![Image Caption](images/9.png)
+   ![Image Caption](images/10.png)
 
 Nicely done! Let's move on to the next section to integrate **EmailJS** with our form.
 
@@ -271,7 +271,7 @@ npm install emailjs-com --save
 
 Then, let's import and initialize **EmailJS** in `Contact.js` with your UserID. You can find your UserID in **Integration** tab of your EmailJS dashboard. The shaded portion of the image below is where your User ID is located at.
 
-![Image Caption](images/11.PNG)
+![Image Caption](images/11.png)
 
 Add following codes to `Contact.js` to integrate **EmailJS**.
 
@@ -317,7 +317,7 @@ EmailJS sends data from the form’s input values, so we’ll have to add this c
 
 Finally, we can add the function that will actually send the data to our email. In the `onSubmit` function, call the `generateContactNumber()` method and the `sendForm()` method, passing in the serviceID, **templateID** (from your EmailJS dashboard), and your html `form id` as arguments.
 
-![Image Caption](images/12.PNG)
+![Image Caption](images/12.png)
 
 We don’t need to pass our EmailJS user ID since we initialized EmailJS already. **MAKE SURE** you call the `generateContactNumber()` method INSIDE the `onSubmit()` method, otherwise your code will enter an infinite loop, setting the contact number, updating the component, and setting the contact number again.
 
@@ -340,11 +340,11 @@ const onSubmit = (data) => {
 
 Once you have everything, go ahead and test it!
 
-![Image Caption](images/13.PNG)
+![Image Caption](images/13.png)
 
 If you get a success message in the console, check out your email!
 
-![Image Caption](images/14.PNG)
+![Image Caption](images/14.png)
 
 Hooray!! Visitor's message has been sent to our message with **Contact Number** we generated! Notice that the contact number is to give unique reference id to each sent message. Also, keep in mind that you have a monthly limit to the number of emails that **EmailJS** will send, 200 per month if you are on the free plan.
 
@@ -446,7 +446,7 @@ Don't forget the styling! Let's hide the message until we are ready to show it. 
 
 Let's see if it works.
 
-![Image Caption](images/15.PNG)
+![Image Caption](images/15.png)
 
 Nice!! We got "Message sent!" message on the top of the form, and we can clearly see the form inputs are cleared after we send the message!
 
