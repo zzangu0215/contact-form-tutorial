@@ -243,16 +243,16 @@ We are going to use **Email.js** to handle sending the data to your working emai
 
 1. Go to [**Email.JS**](www.emailjs.com) and create a free account.
 
-2. Click "Add New Service" button in **Email Services** tab.
+2. Click "Add New Service" button in **Email Services** tab.  
    ![Image Caption](images/5.png)
 
 3. Choose one of the services you want, and fill out the Name and Service ID as following. Then, click connect. You should see the following.  
    ![Image Caption](images/6.png)
 
-4. Create New Template in **Email Templates** tab.
+4. Create New Template in **Email Templates** tab.  
    ![Image Caption](images/7.png)
 
-5. Modify the Subject and Content as following.
+5. Modify the Subject and Content as following.  
    ![Image Caption](images/8.png)
 
 6. Click on `<>` icon, then add `white-space: pre-wrap` attribute to the `<p>` tag for the message.  
