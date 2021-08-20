@@ -402,7 +402,7 @@ const onSubmit = (data) => {
   const messageCharsLeft = document.querySelector(".message-chars-left");
 
   generateContactNumber();
-  sendForm("default_service", "template_h9d7i89", "#form").then(
+  sendForm("default_service", "YOUR_TEMPLATE_ID", "#form").then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
       form.reset();
