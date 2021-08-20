@@ -344,7 +344,7 @@ Once you have everything, go ahead and test it!
 
 If you get a success message in the console, check out your email!
 
-![Image Caption](images/14.png)
+![Image Caption](images/14.PNG)
 
 Hooray!! Visitor's message has been sent to our message with **Contact Number** we generated! Notice that the contact number is to give unique reference id to each sent message. Also, keep in mind that you have a monthly limit to the number of emails that **EmailJS** will send, 200 per month if you are on the free plan.
 
